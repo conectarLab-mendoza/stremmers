@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.pantalla {
+    width: 1920px;
+    height: 1080px;
+    background-color: #00ff00;
+}
+
+
+/* banner */
+.banner {
+    width: 1000px;
+    height: 150px;
+    position: relative;
+
+    top: 800px;
+    left: 500px;
+
+    display: none;
+    animation: banner 1s ease-in-out;
+}
+
+
+
+@keyframes banner {
+    from{
+        opacity: 0%;
+        transform: translateX(1000px);
+    }
+    to{
+        opacity: 100%;
+    }
+}
+
+
+/* animacion */
+
+.animacion {
+    position: relative;
+    display: none;
+    width: 100px;
+    height: 100px;
+    animation: animacion 1s;
+    right: -300px;
+    top: 600px;
+}
+
+@keyframes animacion {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+.verBanner, .verAnimacion {
+    display: block;
+}
